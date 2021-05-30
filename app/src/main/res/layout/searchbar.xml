@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/linlay2"
+        android:orientation="vertical"
+        android:background="@drawable/fla6"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+
+        >
+
+
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="11sp"
+            android:layout_marginEnd="30sp"
+            android:autofillHints="Search for Products"
+            android:background="@drawable/productshadow"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:outlineAmbientShadowColor="#000000"
+            android:queryHint="Hey Dear!,What's on your mind today?"
+            android:searchIcon="@drawable/findbw">
+
+
+
+        </SearchView>
+
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

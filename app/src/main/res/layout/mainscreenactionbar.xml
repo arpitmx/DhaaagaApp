@@ -1,0 +1,91 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "100sp"
+    android:gravity = "center_vertical"
+    android:padding = "10dp"
+    android:background="@drawable/fla1"
+    android:id="@+id/linlay"
+    android:weightSum = "1">
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "100sp"
+        android:gravity = "center_vertical"
+        android:padding = "10dp"
+        android:background="@drawable/fla1"
+        android:id="@+id/linlay2"
+        android:weightSum = "1">
+
+    <LinearLayout
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+
+        >
+
+        <ImageView
+            android:layout_width="30sp"
+            android:padding="3sp"
+            android:layout_height="match_parent"
+            android:src="@drawable/menubutton" />
+
+
+        <TextView
+            android:id="@+id/Dhaaga"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:fontFamily="@font/beneathfree"
+            android:gravity="center"
+            android:paddingTop="5sp"
+            android:text="@string/dhaaga"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="0.4"
+        android:gravity="end">
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:src="@drawable/notification" />
+
+        <ImageView
+            android:id="@+id/wishlist"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:contentDescription="wishlist"
+            android:src="@drawable/wishlist" />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/maincart" />
+
+        <ImageView
+            android:id="@+id/searchbar"
+            android:layout_marginLeft="10sp"
+            android:layout_width="30dp"
+            android:layout_marginRight="5sp"
+            android:layout_height="match_parent"
+            android:src="@drawable/pig" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

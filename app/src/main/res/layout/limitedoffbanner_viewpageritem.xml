@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SliderConstaint"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:background="@drawable/shadow2"
+    android:elevation="3dp"
+
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/viewpagerimageslider"
+        android:layout_width="159dp"
+        android:layout_height="203dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        app:srcCompat="@drawable/sh1" />
+
+    <TextView
+        android:id="@+id/ProductNamemain"
+        android:layout_width="95dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/beneathfree"
+        android:text="@string/puma_xls"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/Nowprice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/viewpagerimageslider" />
+
+    <TextView
+        android:id="@+id/ttl"
+        android:layout_width="78dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Limited Time Offer"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ProductNamemain"
+        app:layout_constraintStart_toEndOf="@+id/viewpagerimageslider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Nowprice"
+        android:layout_width="104dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Today's Price"
+        android:textColor="#000000"
+
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pricenowmain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/viewpagerimageslider" />
+
+    <TextView
+        android:id="@+id/pricenowmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="serif-monospace"
+        android:text="$2000"
+        android:textStyle="bold"
+        android:textColor="#5AD121"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewpagerimageslider" />
+
+    <TextView
+        android:id="@+id/yousavedmain"
+        android:layout_width="26dp"
+        android:layout_height="14dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="36dp"
+
+        android:text="$400"
+        android:textColor="#2786F2"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pricenowmain"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/timeleft"
+        android:layout_width="43dp"
+        android:layout_height="18dp"
+        android:background="#1B81E6"
+        android:gravity="center"
+        android:text="12:2:12"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ProductNamemain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ttl"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219" />
+
+    <TextView
+        android:id="@+id/oldprice"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="$200"
+        android:textColor="#6ECE3A"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/yousavedmain"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pricenowmain"
+        app:layout_constraintTop_toBottomOf="@+id/Nowprice"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

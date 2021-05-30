@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "60932783435",
+    "firebase_url": "https://dhagaa-e8ab3.firebaseio.com",
+    "project_id": "dhagaa-e8ab3",
+    "storage_bucket": "dhagaa-e8ab3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60932783435:android:9856042c7cbd9132",
+        "android_client_info": {
+          "package_name": "com.india.suidhaga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60932783435-cpl17jl4th1e687fj8p6jkic5ptdroag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALY6_ccpTIF2aSQbgeBYLGjHxu5KG20iQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60932783435-cpl17jl4th1e687fj8p6jkic5ptdroag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

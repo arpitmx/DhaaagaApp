@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow"
+    >
+
+
+    <LinearLayout
+        android:layout_width="197dp"
+        android:layout_height="405dp"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="197dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25sp"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            tools:srcCompat="@tools:sample/avatars">
+
+        </ImageView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/thumbsUp"
+                android:layout_width="91dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toStartOf="@+id/addtoCart2"
+                android:padding="2dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="heart.json"
+                app:lottie_loop="true" />
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/addtoCart2"
+                android:layout_width="94dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="1dp"
+                android:padding="2dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="thumbsup.json"
+                app:lottie_loop="true"
+                app:lottie_speed="3" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="218dp"
+        android:layout_height="406dp"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="218dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="25sp"
+            android:layout_weight="0.3"
+            android:background="#00F50303"
+            android:fontFamily="@font/os"
+            android:gravity="top"
+            android:padding="5dp"
+            android:text="Title"
+            android:textColor="#383737"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/companyname"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="0.2"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="bottom"
+            android:padding="7dp"
+            android:text="ByCompany"
+            android:textColor="#969090"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="start"
+            android:padding="5dp"
+            android:text="Subtitle"
+            android:textColor="#C72D3535"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="198dp"
+            android:layout_height="44dp"
+            android:outlineAmbientShadowColor="#FFD100"
+            android:rating="4"
+            android:stepSize="1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.01"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="bottom"
+            android:text="Our Price:"
+            android:textColor="#58C35E"
+            android:paddingStart="6dp"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="218dp"
+            android:layout_height="43dp"
+            android:layout_weight="0.2"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="start"
+            android:padding="4dp"
+            android:text="PRICE"
+            android:textColor="#56CB5C"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
